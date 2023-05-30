@@ -1,0 +1,60 @@
+
+main {
+        position: relative;
+        background-image: url(https://images.pexels.com/photos/3483098/pexels-photo-3483098.jpeg?cs=srgb&dl=pexels-john-guccione-wwwadvergroupcom-3483098.jpg&fm=jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+        color: white;
+
+
+}
+.bg-image{
+        background-color: rgba(0, 0, 0, .5);
+        color: white;
+        height: 100vh;
+        color: white;
+}
+
+ 
+.container {
+        /* justify-content: center; */
+        /* padding-top: 130px!important; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+.btn{
+    padding: 0px 35px!important;
+    border-radius: 0px!important;
+    background-color: white!important;
+    color: black!important;
+}
+.div {
+    margin-top: 50px;
+    border: 1px solid;
+}
+.card {
+    background-color: beige !important;
+    color: rgb(0, 149, 255)!important;
+    justify-content: center;
+    display: flex!important;
+    align-items: center;
+    padding: 0.65rem;
+}
+.select{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .bg-image{
+        height: 100%;
+        background-color: #03527E;
+    }
+    main{
+        background-color: beige;
+    }
+    
+}
