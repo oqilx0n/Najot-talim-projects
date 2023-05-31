@@ -1,0 +1,31 @@
+@mixin centerItems {
+    display: flex;
+    align-items: center;    
+}
+@mixin for-pc  {
+    @media screen and (max-width:1440px) {
+        @content;
+    }
+}
+
+@mixin for-tablet {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin for-mobile {
+    @media screen and (max-width:375px) {
+        @content;
+    }
+}
+@mixin for-navbar {
+@media screen and (max-width:689px) {
+    @content;
+}
+}
+@mixin for-title{
+@media screen and (max-width:576px) {
+    @content;
+}
+}

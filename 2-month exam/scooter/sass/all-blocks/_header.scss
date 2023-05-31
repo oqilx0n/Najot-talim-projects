@@ -1,0 +1,183 @@
+    // navbar 
+    .navbar {
+        @include centerItems;
+        justify-content: space-between;
+        position: relative;
+        background-color: $main-back;
+        @include for-mobile() {
+            column-gap: 0;
+        }
+        &__input {
+            display: none;
+            @include for-mobile {
+            display: none;
+            }
+        }
+        &__label {
+            display: none;
+            position: relative;
+            z-index: 12;
+            @include for-mobile {
+                display: grid;
+                align-items: center;
+                row-gap: 2.5px;
+            } 
+
+        }
+        &__label-lines {
+            height: 3.69px;
+           } 
+        &__logo {
+            max-width: 107.82px;
+            cursor: pointer;
+        }
+        &__item {
+            @include centerItems;
+            justify-content: space-between;
+            margin-left: 58px;
+            width: 100%;
+            @include for-mobile() {
+                position: absolute;
+                top: 64px;
+                left: -100%;
+                flex-direction: column;
+                width: 50%;
+                height: 400px;
+                background-color: #333A44;
+                padding-top: 64px;
+                padding-bottom: 30px;
+                transition: 1s;
+                z-index: 1;
+            }
+        }
+        &__ul {
+            @include centerItems;
+            justify-content: space-between;
+            column-gap: 32px;
+            @include for-mobile {
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+        &__ul-li-a {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+        }
+        &__ul-li-a:hover {
+            color: $btn-color;
+        }
+        &__btn {
+            font-family: $h-family-font;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            color: $white-color;
+            padding: 14px 39px;
+            text-align: center;
+            background-color: $btn-color;
+            border: 3px solid $btn-color;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-top: 22px;
+            margin-bottom: 22px;
+        }
+        &__btn:hover {
+        transition: 0.3s;
+        color: $btn-color;
+        border: 3px solid $btn-color;
+        background-color: rgba(0, 0, 0, .001);
+        }
+    }
+    
+    .navbar__input:checked~.navbar__item {
+        @include for-mobile {
+            left: -20px;
+        }
+    }
+    .navbar__input:checked~.line3 {
+       @include for-mobile {
+        display: none;
+      }
+    }
+    .open {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+
+    // navbar ended
+    
+    
+    // header body 
+
+    .box {
+        background-image: url("../images/Bitmap.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-size: cover;
+    }
+    
+    .hero {
+        max-width: 500px;
+        display: grid;
+        row-gap: 40px;
+        &__title {
+            padding-top: 145px;
+            color: $white-color;
+            letter-spacing: -2.5px;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 56px;
+            max-width: 500px;
+            padding-bottom: 40px;
+        }
+        p {
+            margin-left: 65px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $white-color;
+        }
+        &__btn {
+            margin-top: 0px;
+            margin-bottom: 165px;
+            margin-left: 65px;
+        }
+    }
+    
+    .outline__img {
+        position: absolute;
+    }
+    
+    .hero__img {
+        top: -300px;
+        left: 485px;
+        position: relative;
+        @include for-tablet {
+            left: -127px;
+            top: 569px;
+        }
+    }
+    
+    .box__img {
+        top: -450px;
+        position: relative;
+        @include for-tablet {
+            display: none;
+        }
+    }
+    
+    @include for-mobile {
+        .navbar .navbar__item {
+            margin: 0 auto;
+        }
+    }

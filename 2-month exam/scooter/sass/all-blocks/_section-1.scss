@@ -1,0 +1,107 @@
+.menu-cards {
+    column-gap: 30px;
+    display: flex;
+    background-image: url(../../images/hr-path.svg);
+    background-repeat: no-repeat;
+    background-position: 50px 40px;
+    margin-top: 160px;
+    @include for-tablet {
+        flex-direction: column;
+        background-image: none;
+        margin-top: 122px;
+        column-gap: 40px;
+    }
+    @include for-mobile {
+        row-gap: 48px;
+    }
+}
+.menu_card {
+    @include for-tablet {
+        display: flex;
+        column-gap: 70px;
+        align-items: center;
+    }
+    @include for-mobile {
+        flex-direction: column;
+    }
+}
+.menu__card-item {
+    width: 96px;
+    height: 96px;
+    background: #FCB72B;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    @include for-tablet {
+        align-items: center;
+        display: flex;
+    }
+}
+.menu__card--texts {
+    @include for-mobile {
+        text-align: center;
+    }
+}
+.menu__card--texts h3 {
+    font-family: 'Space Mono';
+    font-size: 24px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    padding-top: 40px;
+    padding-bottom: 27px;
+}
+.menu__card--texts p {
+    width: 361px;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    @include for-tablet {
+        width: 420px;
+    }
+}
+.menu__text--btn {
+    @include for-tablet {
+        order: 2;
+        text-align: center;
+    }
+}
+.menu-lover {
+    margin-top: 720px;
+    @include for-tablet {
+        margin-top: 1070px;
+    }
+}
+.menu__text--btn button {
+    font-family: 'Space Mono';
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    Width: 180px;
+    Height: 53px;
+    border: none;
+    background-color: #FCB72B;
+    transition: 1s;
+    margin-top: 40px;
+}
+.menu__text--btn button:hover {
+    border: 3px solid #FCB72B;
+    color: #FCB72B;
+    transition: 1s;
+    background-color: transparent;
+}
+.menu-careers img {
+    @include for-tablet {
+        order: 1;
+    }
+}
+.menu-careers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 186px;
+    @include for-tablet {
+        flex-direction: column;
+    }
+}

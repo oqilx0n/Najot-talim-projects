@@ -1,0 +1,58 @@
+.section-3 {
+    margin-top: 226px;
+    @include for-tablet {
+        margin-top: 460px;
+    }
+}
+
+.menu-item-works {
+    display: flex;
+    column-gap: 165px;
+    @include for-tablet {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 64px;
+    }
+}
+
+.menu-work_texts h6 {
+    width: 445px;
+
+    font-family: 'Space Mono';
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.menu-work_texts p {
+    width: 445px;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+
+.menu-work_texts button {
+    font-family: 'Space Mono';
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    Width: 180px;
+    Height: 53px;
+    transition: 1s;
+    background: #FCB72B;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-work_texts button:hover {
+    background-color: transparent;
+    border: 3px solid #FCB72B;
+    transition: 1s;
+    color: #FCB72B;
+    cursor: pointer;
+}

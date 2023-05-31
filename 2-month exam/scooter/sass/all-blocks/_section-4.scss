@@ -1,0 +1,79 @@
+.section-4 {
+    margin-top: 226px;
+}
+.menu_section-png {
+    margin-top: 266px;
+    background-image: url(../../images/Mask.svg);
+    height: 300px;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+
+.menu-nature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.menu_align {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include for-mobile {
+        flex-direction: column;
+    }
+    @include for-tablet {
+        flex-direction: column;
+        margin-top: -45px;
+    }
+}
+
+// .menu-h4 {
+//     padding-top: 102px;
+//     padding-left: 165px;
+//     width: 574px;
+//     font-family: 'Space Mono';
+//     font-size: 48px;
+//     line-height: 48px;
+//     letter-spacing: -2.14286px;
+//     color: #ffffff;
+//     @include for-tablet {
+//         text-align: center;
+//         min-width: 574px;
+//         margin-left: -120px;
+//     }
+// }
+.menu-h4 {
+    font-family: 'Space Mono';
+    font-size: 45px;
+    line-height: 48px;
+    letter-spacing: -2.14286;
+    color: $white-color;
+    width: 415px;
+    font-weight: 700;
+    margin: 102px 165px;
+    @include for-tablet {
+        text-align: center;
+        min-width: 574px;
+        margin-left: -120px;
+    }
+}
+
+.menu-sign_up {
+    padding-right: 165px;
+    padding-top: 60px;
+    @include for-tablet {
+        align-items: center;
+        margin-left: 200px;
+        display: flex;
+        margin-top: -40px;
+    }
+    @include for-mobile {
+        min-width: 100%;
+    }
+}
