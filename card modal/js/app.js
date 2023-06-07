@@ -24,7 +24,8 @@ fetch(`${url}/posts`)
      card.setAttribute('id', element.id);
      card.append(title, text)
      const col = document.createElement('div');
-     col.classList.add('col-4');
+     col.classList.add('col-lg-4');
+     col.classList.add('col-12');
      col.appendChild(card);
      row.appendChild(col)
 }))
@@ -52,16 +53,19 @@ row.addEventListener('click', (e) => {
     //    const  {body, name, email} = pBody;
        console.log(pBody);
        pBody.forEach(e => {
+        const profile = document.createElement('img');
+        
         const comments = document.createElement('div')
+        comments.classList.add('card')
         const mText = document.createElement('p')
         mText.textContent = e.body;
-        const names = document.createElement('p')
-        names.textContent = e.name;
-        const emails = document.createElement('p')
+        const names = document.createElement('h5')
+        names.textContent = `${e.name}: `;
+        const emails = document.createElement('span')
         emails.textContent = e.email;
 
-       comments.append(mText, names, emails)
-       mBody.append(comments)
+           comments.append(names, emails, mText)
+       mBody.append(profile, comments)
        })
     }
 

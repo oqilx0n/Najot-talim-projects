@@ -1,9 +1,15 @@
-.card {
-    padding: 17px!important;
+
+
+
+body {
+    padding: 25px 15px;
 }
-.card h4 {
-    height: 85px;
+.header-1{
+    margin-bottom: 15px;
+        font-family: "Roboto", sans-serif;
 }
+
+
 .btn {
     position: absolute!important;
     width: 100%;
@@ -15,6 +21,58 @@
 .container {
     position: relative;
 }
-.card p {
-   height: 100px;
+.col-12 .card {
+    padding: 17px !important;
 }
+
+.modal-body .card {
+    border: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid;
+    margin-bottom: 6px;
+ }
+
+.modal-body h5{
+            margin-bottom: 0 !important;
+        font-family: "Roboto", sans-serif;
+}
+.modal-body span{
+    margin-bottom: 15px;
+}
+ @media (min-width: 1200px) {
+    body{
+        padding: 45px 15px;
+    }
+    .header-1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+    
+    
+    .col-12 .card h4 {
+        height: 85px;
+        display: flex;
+        align-items: center;
+    }
+    .col-12 .card p {
+        height: 100px;
+        color: #808080;
+    }
+
+        .modal-body p {
+            color: var(--yt-spec-text-primary);
+            font-family: "Arial", sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+            font-weight: 400;
+            color: #808080;
+        }
+    
+        .modal-body h5 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.8rem;
+        }
+ }
